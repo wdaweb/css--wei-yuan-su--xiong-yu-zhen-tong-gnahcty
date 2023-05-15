@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(transparent 49.95%, #000 50%, transparent 50.2%);
+            background-size: 1200px 100vh;
+            background-repeat: no-repeat;
+            background-position-x: center;
+        }
+
+
+        #in::before {
+            content: "";
+            width: 80px;
+            height: 200px;
+            background-color: #000;
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #in {
+            display: flex;
+            border: 0.5px solid #bbb;
+            width: 400px;
+            height: 196px;
+            position: absolute;
+            left: 81px;
+            top: 50%;
+            transform: translate(0%, -50%);
+            background: linear-gradient(#fff 25%, #ccc 60%, #fff 100%);
+            font-size: 1.5rem;
+            color: #ccc;
+            line-height: 359px;
+
+        }
+
+        #in::after {
+            content: "";
+            border: 0.5px solid #bbb;
+            width: 400px;
+            height: 196px;
+            position: absolute;
+            left: 480px;
+            top: -2px;
+            background: linear-gradient(#ffa 25%, #cc8 60%, #ffa 100%);
+        }
+
+        #out {
+            width: 1060px;
+            height: 140px;
+            border-radius: 10px;
+            border: 1px solid #bbb;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-55%, -50%);
+            background: linear-gradient(#fff 25%, #ccc 60%, #fff 100%);
+            font-size: 3rem;
+            text-align: right;
+            line-height: 140px;
+        }
+
+        #out::before {
+            content: "";
+            border: 0.5px solid #b2b2b2;
+            width: 80px;
+            height: 200px;
+            position: absolute;
+            bottom: -30px;
+            left: -70px;
+            border-radius: 15%;
+            background: linear-gradient(#fff 25%, #ccc 60%, #fff 100%);
+        }
+
+        #out::after {
+            content: "";
+            position: absolute;
+            width: 896px;
+            height: 100px;
+            top: -28.5px;
+            left: 72px;
+            background: linear-gradient(90deg, transparent 95%, #000 100%) repeat-x left top/25px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="out">
+        <div id="in">Made in Taiwan</div>
+    </div>
+
+</body>
+
+</html>
