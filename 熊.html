@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .face {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 375px;
+            height: 375px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .face::before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .face::after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: -17%;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .nose {
+            content: '';
+            width: 45%;
+            height: 31%;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        .nose::before {
+            content: '';
+            width: 60%;
+            height: 32%;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nose::after {
+            content: '';
+            width: 23%;
+            height: 22%;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .eyes {
+            border-radius: 50%;
+            height: 20%;
+            width: 20%;
+            background: radial-gradient(black 0%, black 47%, white 47%, white 100%);
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        .eyes::after {
+            content: "";
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            background: radial-gradient(black 0%, black 47%, white 47%, white 100%);
+            position: absolute;
+            left: 200%;
+        }
+
+        .ears {
+            border-radius: 50%;
+            height: 16%;
+            width: 16%;
+            background: radial-gradient(white 0%, white 45%, black 45%, black 100%);
+            position: absolute;
+            left: 10%;
+        }
+
+        .ears::after {
+            content: "";
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            background: radial-gradient(white 0%, white 45%, black 45%, black 100%);
+            position: absolute;
+            left: 400%;
+        }
+
+        .v {
+            height: 12%;
+            width: 11%;
+            background-color: white;
+            position: absolute;
+            top: 78%;
+            left: 38%;
+            transform: skew(50deg);
+        }
+
+        .v::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            left: 120%;
+            transform: skew(-65deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="face">
+        <div class="nose"></div>
+        <div class="eyes"></div>
+        <div class="ears"></div>
+        <div class="v"></div>
+    </div>
+</body>
+
+</html>
